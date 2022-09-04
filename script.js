@@ -72,7 +72,6 @@ const loadSingleNews = (id) => {
         .then((data) => {
             console.log(data.data[0]);
             displayModal(data.data[0]);
-            // displayAllCategory(data.data);
         });
 };
 
@@ -153,10 +152,25 @@ const displayModal = (singleNews) => {
             </div>
             <div class="modal-body">
                 <div class="card" >
-                <img src="${singleNews.image_url}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">${singleNews.details}</p>
-                </div>
+                    <img src="${singleNews.image_url}" class="card-img-top" alt="...">
+                    
+                    <div class="card-body">
+                        <p class="card-text">${singleNews.details}</p>
+                    </div>
+
+                    <p class="card-text p-3">
+                        <small class="text-muted d-flex justify-content-between">
+                
+                            <span><img
+                            src="${singleNews.author.img}"
+                            class="img-fluid author-img"
+                            alt="..."
+                            <span>${singleNews.author.name} </span>
+                        </span>
+                        
+                        <span> views: ${singleNews.total_view} </span>  
+                            </small>
+                    </p>
                 </div>
             </div>
             <div class="modal-footer">
