@@ -54,9 +54,17 @@ const displayAllCategory = (news) => {
                         <p class="card-text d-inline-block text-truncate"style="max-width: 100%;">
                             ${singleNews.details}
                         </p>
-                        <p class="card-text">
+                        <p class="card-text mt-4">
                             <small class="text-muted d-flex justify-content-between">
-                               <span>${singleNews.author.name} </span>  <span>${singleNews.total_view} </span>  
+                    
+                              <span><img
+                              src="${singleNews.author.img}"
+                              class="img-fluid rounded-start author-img"
+                              alt="..."
+                              <span>${singleNews.author.name} </span>
+                           </span>
+                           
+                          <span> views: ${singleNews.total_view} </span>  
                                </small>
                         </p>
                     </div>
