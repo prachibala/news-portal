@@ -172,7 +172,6 @@ const displayModal = (singleNews) => {
     </div>
     `;
 };
-// loadSingleNews(${singleNews._id})
 
 // ------------------------loader------------------->
 const toggleSpinner = (isLoading) => {
