@@ -5,9 +5,33 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Article Center</title>
+        <!-- Bootstrap -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+        />
+        <!-- css -->
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
+        <nav class="navbar bg-light" id="navbar">
+            <div class="container">
+                <a class="navbar-brand mb-0 h1" style="color: #5d5fef"
+                    ><span class="nav-title">Article</span> Center</a
+                >
+                <div class="d-flex">
+                    <a class="navtext" href="">Home</a>
+                    <a class="ms-5 navtext" href="">Blogs</a>
+                    <img class="ms-5" src="" alt="" />
+                </div>
+            </div>
+        </nav>
+        <section id="category" class="w-75 mx-auto"></section>
+
+        <main class="container w-75 mx-auto" id="newsContainer"></main>
+
+        <!-- Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
         <!-- js file -->
         <script src="script.js"></script>
     </body>
